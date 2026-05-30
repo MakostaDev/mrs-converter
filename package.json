@@ -1,0 +1,22 @@
+{
+  "name": "mrs-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pug src/index.pug --out dist/",
+    "watch": "pug src/index.pug --out dist/ --watch",
+    "start": "serve dist -l tcp://127.0.0.1:3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "serve": "^14.2.6"
+  },
+  "dependencies": {
+    "fzstd": "^0.1.1"
+  }
+}
