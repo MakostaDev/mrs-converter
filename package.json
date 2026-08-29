@@ -1,0 +1,23 @@
+{
+  "name": "mrs-converter",
+  "description": "Converter .mrs file",
+  "version": "1.0.0",
+  "main": "mrs-converter.js",
+  "scripts": {
+	"build": "pug3 pug/index.pug --out site/ --pretty && esbuild site/js/mrs-converter.js --bundle --format=esm --outfile=site/js/mrs-converter.bundle.js",
+    "watch": "pug3 pug/index.pug --out site/ --watch",
+    "start": "serve site/ -l tcp://127.1.1.1:1337"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "cidr-calc": "^1.0.4",
+    "fzstd": "^0.1.1"
+  },
+  "devDependencies": {
+	"@tokilabs/pug3-cli": "^3.0.1",
+    "@biomejs/biome": "^2.5.11",
+    "esbuild": "^0.28.2",
+    "serve": "^14.2.6"
+  }
+}
