@@ -4,7 +4,9 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title MRS Converter
+        script(src="js/theme.js")
         link(rel="stylesheet" href="style.css")
+        script(src="js/app.js" type="module" defer)
     body
         header
             h1 MRS Converter
@@ -28,4 +30,3 @@ html(lang="ru")
                     p Drop file here
                     p.sub or click to browse
         section#result.hidden
-        script(src="js/app.js" type="module")
